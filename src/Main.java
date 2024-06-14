@@ -7,18 +7,11 @@ public class Main {
     {
 
         System.out.println("Enter the text:");
+        // next 2 lines should be merged in one
         Scanner s = new Scanner(System.in);
         String text = s.nextLine();
 
-        int counter = 1;
-
-        for(int i =0; i<text.length();i++)
-        {
-            if ((text.charAt(i)== ' ')&&(text.charAt(i+1) != ' '))
-            {
-              counter++;
-            }
-        }
+        // use string.split function to get the result u need
 
         System.out.println("Number of word(s): "+counter);
 
